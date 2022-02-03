@@ -1,9 +1,13 @@
 import React from "react";
 import "./App.scss";
+import { DemoClass } from "./DemoClass";
 
 function App() {
-  const name = "Abhishek";
-  return <div>Hi {name}! Is your app working?</div>;
+  return (
+    <div>
+      <DemoClass />
+    </div>
+  );
 }
 
 export default App;
