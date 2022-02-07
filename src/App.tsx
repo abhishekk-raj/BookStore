@@ -6,8 +6,8 @@ import { DemoFunction } from "./DemoFunction";
 function App() {
   return (
     <div>
-      <DemoClass />
-      <DemoFunction />
+      <DemoClass compName="Class component" />
+      <DemoFunction compName="Function component" />
     </div>
   );
 }

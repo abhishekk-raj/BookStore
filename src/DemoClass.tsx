@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
-interface IProps {}
+interface IProps {
+  compName: string;
+}
 interface IState {
   name: string;
   deg: string;
@@ -25,6 +27,7 @@ export class DemoClass extends Component<IProps, IState> {
       <div>
         <div>Hello Class Component</div>
         <div>{this.state.name}</div>
+        <div>{this.props.compName}</div>
         <button onClick={this.onUpdateNameButtonClick}>Update name</button>
       </div>
     );
