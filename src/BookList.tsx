@@ -1,21 +1,5 @@
 import React from "react";
-
-interface IBook {
-  id: string;
-  title: string;
-  subtitle: string;
-  author: string;
-  published: string;
-  publisher: string;
-  pages: number;
-  description: string;
-  website: string;
-}
-
-interface IProps {
-  book: IBook;
-  index: number;
-}
+import { IProps } from "./models/book-list.props";
 
 const BookList = (props: IProps) => {
   return (

@@ -1,18 +1,7 @@
 import React, { useState } from "react";
 import "./App.scss";
 import BookList from "./BookList";
-
-interface IBook {
-  id: string;
-  title: string;
-  subtitle: string;
-  author: string;
-  published: string;
-  publisher: string;
-  pages: number;
-  description: string;
-  website: string;
-}
+import { IBook } from "./models/book.props";
 
 const bookData: IBook[] = [
   {
