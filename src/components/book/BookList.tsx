@@ -5,7 +5,12 @@ import styles from "./BookList.module.scss";
 const BookList = (props: IProps) => {
   return (
     <div className={styles.listItem}>
-      {props.index + 1}. {props.book.title}
+      <div>
+        <h4>{props.book.title}</h4>
+        <h6>Author - {props.book.author}</h6>
+        <h6>Published - {new Date(props.book.published).toDateString()}</h6>
+      </div>
+      <button>View Details</button>
     </div>
   );
 };

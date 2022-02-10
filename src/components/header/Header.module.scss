@@ -1,12 +1,14 @@
 .header {
-  background-color: #212121;
-  color: whitesmoke;
+  background-color: #0d0d0d;
+  color: mediumslateblue;
   padding: 1.2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
   border-bottom: 0.05rem solid black;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
 
   img {
     width: 2rem;

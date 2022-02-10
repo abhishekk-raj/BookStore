@@ -1,8 +1,41 @@
 .listItem {
+  display: flex;
   color: white;
   background-color: #191c20;
-  padding: 0.5rem;
+  padding: 0.6rem;
   margin: 0.35rem;
   font-size: 0.9rem;
   border-radius: 0.2rem;
+  align-items: center;
+
+  h4 {
+    margin: 0;
+    color: mediumslateblue;
+  }
+
+  h6 {
+    margin: 0;
+    margin-top: 0.3rem;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+
+  div {
+    flex: auto;
+  }
+
+  button {
+    padding: 0.75rem 1rem;
+    background-color: mediumslateblue;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: slateblue;
+    }
+  }
 }
