@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.scss";
-import BookList from "./BookList";
-import { IBook } from "./models/book.props";
+import BookList from "../book/BookList";
+import { IBook } from "../../models/book.props";
 
 const bookData: IBook[] = [
   {

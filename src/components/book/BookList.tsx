@@ -1,5 +1,5 @@
 import React from "react";
-import { IProps } from "./models/book-list.props";
+import { IProps } from "../../models/book-list.props";
 import styles from "./BookList.module.scss";
 
 const BookList = (props: IProps) => {
