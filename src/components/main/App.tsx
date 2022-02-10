@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.scss";
 import BookList from "../book/BookList";
 import { IBook } from "../../models/book.props";
+import { Header } from "../header/Header";
 
 const bookData: IBook[] = [
   {
@@ -109,6 +110,7 @@ function App() {
   const [bookList] = useState<IBook[]>(bookData);
   return (
     <div>
+      <Header title="Book Store" />
       {bookList.map((book: IBook, index: number) => {
         return <BookList book={book} key={book.id} index={index} />;
       })}
