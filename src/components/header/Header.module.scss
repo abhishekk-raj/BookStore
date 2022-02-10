@@ -1,5 +1,15 @@
 .header {
   background-color: #212121;
   color: whitesmoke;
-  padding: 1.5rem;
+  padding: 1.2rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 0.05rem solid black;
+
+  img {
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
 }

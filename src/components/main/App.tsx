@@ -3,6 +3,7 @@ import "./App.scss";
 import BookList from "../book/BookList";
 import { IBook } from "../../models/book.props";
 import { Header } from "../header/Header";
+import logo from "../../assets/images/book-stack.png";
 
 const bookData: IBook[] = [
   {
@@ -110,7 +111,7 @@ function App() {
   const [bookList] = useState<IBook[]>(bookData);
   return (
     <div>
-      <Header title="Book Store" />
+      <Header title="Book Store" logo={logo} />
       {bookList.map((book: IBook, index: number) => {
         return <BookList book={book} key={book.id} index={index} />;
       })}
