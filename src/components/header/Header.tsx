@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 
 export const Header = (props: IHeaderProps) => {
   return (
-    <div className={styles.header} onMouseLeave={() => alert("Hello World! ")}>
+    <div className={styles.header}>
       <img src={props.logo} alt="logo" />
       <div>{props.title}</div>
     </div>
