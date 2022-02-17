@@ -1,7 +1,8 @@
+import { MouseEvent } from "react";
 import { IBook } from "./book.props";
 
 export interface IProps {
   book: IBook;
   index: number;
-  onBookClick: any;
+  onBookClick: (event: MouseEvent<HTMLElement>) => void;
 }
