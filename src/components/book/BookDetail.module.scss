@@ -1,0 +1,35 @@
+.Book {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 12rem);
+
+  .card {
+    background: #424242;
+    width: 40%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+  }
+
+  .tableDataTitle {
+    width: 15%;
+    color: mediumslateblue;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Book {
+    .card {
+      width: 100%;
+    }
+  }
+}

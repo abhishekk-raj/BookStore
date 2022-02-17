@@ -25,7 +25,7 @@
     flex: auto;
   }
 
-  button {
+  a {
     padding: 0.75rem 1rem;
     background-color: mediumslateblue;
     border: none;
@@ -33,6 +33,7 @@
     border-radius: 0.2rem;
     font-size: 0.8rem;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       background-color: slateblue;
