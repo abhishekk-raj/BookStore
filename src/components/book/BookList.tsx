@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IProps } from "../../models/book-list.props";
 import styles from "./BookList.module.scss";
 
@@ -10,7 +11,9 @@ const BookList = (props: IProps) => {
         <h6>Author - {props.book.author}</h6>
         <h6>Published - {new Date(props.book.published).toDateString()}</h6>
       </div>
-      <button>View Details</button>
+      <Link to={props.book.id} state={props.book}>
+        View Details
+      </Link>
     </div>
   );
 };
