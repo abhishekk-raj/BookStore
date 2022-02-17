@@ -10,7 +10,7 @@ const BookList = (props: IProps) => {
         <h6>Author - {props.book.author}</h6>
         <h6>Published - {new Date(props.book.published).toDateString()}</h6>
       </div>
-      <button onClick={props.onBookClick}>View Details</button>
+      <button>View Details</button>
     </div>
   );
 };
