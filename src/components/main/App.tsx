@@ -6,6 +6,7 @@ import Book from "../book/Book";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import BookDetail from "../book/BookDetail";
 import BookCreate from "../book/BookCreate";
+import BookClass from "../book/BookClass";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/book" element={<Book />} />
+          <Route path="/book" element={<BookClass />} />
           <Route path="/book/:id" element={<BookDetail />} />
           <Route path="/book/create" element={<BookCreate />} />
           <Route path="/" element={<Navigate replace to="/book" />} />
