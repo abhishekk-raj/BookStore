@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { bookData } from "../../assets/data/book-data";
 import { IBook } from "../../models/book.props";
+import fetchBooksFromApi from "../../services/book-api-function.service";
 import BookList from "./BookList";
 
 const Book = () => {
-  const [bookList] = useState<IBook[]>(bookData);
+  const [bookList, setBookList] = useState<IBook[]>([]);
+
+  useEffect(() => {
+    fetchBooksFromApi()
+      .then((books: IBook[]) => {
+        setBookList(books);
+      })
+      .catch((error) => {
+        console.log(`Error while fetching books data :: ${error}`);
+      });
+  }, []);
 
   return (
     <div>
